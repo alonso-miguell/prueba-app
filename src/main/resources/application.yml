@@ -1,0 +1,27 @@
+#spring properties muy similar al application,properties pero con estructura jerarquica en vez de single line
+#sobrescribimos el banner
+spring:
+  banner:
+    location: classpath:ejemploBanner/example.txt
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_app?serverTimezone=UTC
+    username: root
+    password: 
+  jpa:
+    show-sql: true
+    
+    hibernate:
+      ddl-auto: update
+      # naming:
+      #   implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  thymeleaf:
+    cache: false
+server:
+  #utilizamos esta propiedad para indicarle que no queremos el error 404 default de spring 
+  #y en automatico jala la pagina 404 de la carpeta templates/error
+  error: 
+    whitelabel:
+      enabled: false  
