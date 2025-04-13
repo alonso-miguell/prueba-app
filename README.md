@@ -1,1 +1,1 @@
-### Another test app to practice some spring concepts, I can't remeber exactly was tutorial/course was following for this one
+### Another test app to practice some spring concepts, I can't remember exactly the tutorial/course I was following for this one
